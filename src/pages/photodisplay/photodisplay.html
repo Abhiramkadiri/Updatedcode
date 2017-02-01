@@ -1,0 +1,30 @@
+
+<ion-header>
+<ion-toolbar fixed>
+  <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+<ion-title>Upload Material</ion-title>
+</ion-toolbar>
+<button (click)="takePhoto()" ion-button outline block>Take Photo</button>
+</ion-header>
+
+
+
+<ion-content padding>
+<ion-card *ngFor="let photo of photos">
+   <ion-card-content>
+    <img [src]="photo.src"/>
+    <button (click)="likePhoto(photo)" ion-button block>
+      <ion-icon name="heart"></ion-icon>
+      <ion-badge item-right>{{photo.likes}}</ion-badge>
+    </button>
+    <button (click)="deletePhoto(photo)"ion-button color="danger" block>
+      <ion-icon name="trash"></ion-icon>
+    </button>
+  </ion-card-content> 
+  </ion-card> 
+</ion-content>
+</ion-content>
+jhbbhoh
+hhbi;b;

@@ -1,0 +1,18 @@
+
+<ion-header transparent>
+     <ion-navbar color="appheader">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Notifications</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <p> Schedule Notifications </p>
+  <button ion-button color="loginbutton" block (click)="Gotodatepage()">
+      By Date
+    </button>
+  <button ion-button color="loginbutton" block (click)="Gotodaypage()">
+      By Day
+    </button>
+</ion-content>

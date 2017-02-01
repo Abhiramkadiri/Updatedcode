@@ -1,0 +1,32 @@
+
+<ion-header transparent>
+     <ion-navbar color="appheader">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Notifications</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <p align='left'> <b>From</b> </p>
+  <ion-item>
+  <ion-label>Date</ion-label>
+  <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="myDate"></ion-datetime>
+</ion-item>
+<p align='left'> <b>To </b> </p>
+  <ion-item>
+  <ion-label>Date</ion-label>
+  <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="myDate2"></ion-datetime>
+</ion-item><br/>
+ <ion-item>
+   <ion-label stacked>Title</ion-label>
+   <ion-textarea [(ngModel)]="msg"></ion-textarea>
+ </ion-item>
+ <ion-item>
+   <ion-label stacked> Message </ion-label>
+   <ion-textarea [(ngModel)]="msg2"></ion-textarea>
+ </ion-item>
+<button ion-button color="loginbutton" block (click)="notifythanks()" >
+      Set Notifications
+    </button>
+</ion-content>

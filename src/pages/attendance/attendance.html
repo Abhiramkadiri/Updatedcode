@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar  color="appheader">
+    <ion-title>Attendance</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding><br/>
+  <ion-list>
+  <ion-item>
+    <ion-label>Standard</ion-label>
+    <ion-select [(ngModel)]="Standard">
+      <ion-option value="Standard I">Standard I</ion-option>
+      <ion-option value="Standard II">Standard II</ion-option>
+      <ion-option value="Standard III">Standard III</ion-option>
+      <ion-option value="Standard IV">Standard IV</ion-option>
+      <ion-option value="Standard V">Standard V</ion-option>
+      <ion-option value="Standard VI">Standard VI</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+<ion-list>
+  <ion-item>
+    <ion-label>Section</ion-label>
+    <ion-select [(ngModel)]="Section">
+      <ion-option value="A"> A </ion-option>
+      <ion-option value="B"> B </ion-option>
+      <ion-option value="C"> C </ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list> <br/>
+
+<button ion-button color="loginbutton" block (click)="attendance2()">
+      Submit
+    </button><br/>
+</ion-content>
