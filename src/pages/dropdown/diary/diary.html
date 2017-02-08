@@ -1,0 +1,44 @@
+
+<ion-header>
+
+  <ion-navbar color="appheader">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Diary</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+  <ion-label>Date</ion-label>
+  <ion-datetime displayFormat="YYYY/DD/MM" [(ngModel)]="myDate"></ion-datetime>
+  </ion-item>
+  <br/>
+<ion-item>
+  <ion-label>Subject</ion-label>
+  <ion-select [(ngModel)]="mysubject" multiple="false">
+    <ion-option>Social</ion-option>
+    <ion-option>Environmental Sciences</ion-option>
+    <ion-option>Physics</ion-option>
+    <ion-option>Maths</ion-option>
+    <ion-option>Chemistry</ion-option>
+    <ion-option>Biology</ion-option>
+  </ion-select>
+</ion-item>
+<br/>
+<ion-item>
+   <ion-label floating>Description</ion-label>
+   <ion-textarea [(ngModel)]="myDate"></ion-textarea>
+ </ion-item>
+ <br/>
+ <button ion-button color="loginbutton" block >
+      Confirm
+    </button>
+  <ion-item>
+   <ion-label stacked>Your Message</ion-label>
+   <ion-textarea [(ngModel)]="myDate"></ion-textarea>
+ </ion-item>
+</ion-content>
